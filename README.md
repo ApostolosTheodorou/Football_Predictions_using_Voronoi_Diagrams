@@ -10,7 +10,7 @@ To run an evaluation of the tested classifiers navigate to the "code/classifier_
 
  Estimated time for 1 fold: 12 min.
 
-* If you want to run multiple folds create more folds directories with the structure of the existing fold and name the Fold-2, Fold-3 etc. Then change the number of folds in file evaluateClassifier.py line 16.
+* If you want to run multiple folds create more folds directories with the structure of the existing fold and name them Fold-2, Fold-3 etc. Then change the number of folds in file evaluateClassifier.py line 16.
 
 
 To run a prediction for future or completed matches move the savedModels and matchdays directories in the code/prediction directory and run:
