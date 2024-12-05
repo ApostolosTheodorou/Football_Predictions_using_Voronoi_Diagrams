@@ -13,4 +13,6 @@ To run an evaluation of the tested classifiers navigate to the "code/classifier_
 * If you want to run multiple folds create more folds directories with the structure of the existing fold and name the Fold-2, Fold-3 etc. Then change the number of folds in file evaluateClassifier.py line 16.
 
 
-To 
+To run a prediction for future or completed matches move the savedModels and matchdays directories in the code/prediction directory and run:
+
+-$python3 driver.py
