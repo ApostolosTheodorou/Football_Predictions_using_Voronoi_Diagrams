@@ -10,10 +10,10 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import f1_score, matthews_corrcoef
 
-import pygame
+# import pygame
 import metrics
 
-FOLDS= 5                                  # The number of different folds that will be used to evaluate the classifiers
+FOLDS= 1                                  # The number of different folds that will be used to evaluate the classifiers
 classifiers= {0:'Random Forest', 1:'Decision Tree', 2:'Support Vector Classifier',
               3:'Logistic Regression', 4:'Multinomial Naive Bayes', 
               5:'k-Nearest Neighbors', 6:'Neural Network'}                                                                          
@@ -98,10 +98,10 @@ def testClassifiers():
     print(f'Time: {end-start}s')
 
 testClassifiers() 
-pygame.mixer.init()
-pygame.mixer.music.load("./sound.mp3")
-pygame.mixer.music.play()
-time.sleep(15)
+# pygame.mixer.init()
+# pygame.mixer.music.load("./sound.mp3")
+# pygame.mixer.music.play()
+# time.sleep(15)
 
 
 
