@@ -4,7 +4,7 @@ While the Voronoi diagram is being widely used in football analysis with several
 
 ## Execution
 
-To run an evaluation of the tested classifiers write:
+To run an evaluation of the tested classifiers navigate to the "code/classifier_selection" directory and run:
 
 -$ python3 evaluateClassifier.py
 
