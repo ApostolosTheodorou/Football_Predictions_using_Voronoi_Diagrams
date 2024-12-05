@@ -5,7 +5,8 @@ While the Voronoi diagram is being widely used in football analysis with several
 ## Execution
 
 To run an evaluation of the tested classifiers write:
--$ python3 evaluateClassifier.py
+\\-$ python3 evaluateClassifier.py
+\\ Estimated time for 1 fold: 12 min.
 
 * If you want to run multiple folds create more folds directories with the structure of the existing fold and name the Fold-2, Fold-3 etc. Then change the number of folds in file evaluateClassifier.py line 16.
 
