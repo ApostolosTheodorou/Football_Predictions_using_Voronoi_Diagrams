@@ -65,27 +65,27 @@ class Team:
         print(self.name)
         print('-'*len(self.name))
         print('Home Statistics:')
-        print(f'Wins: {self.matches['home']['win']}\t',
-        f'Draws: {self.matches['home']['draw']}\t',
-        f'Losses: {self.matches['home']['loss']}')
-        print(f'Goals:    Scored: {self.goals['home']}\t\t'
-              f'Conceded: {self.goalsAgainst['home']}')
-        print(f'Attempts: 1: {self.attempts['home'][1]}      '
-              f'2: {self.attempts['home'][2]}      '
-              f'3: {self.attempts['home'][3]}      '
-              f'4: {self.attempts['home'][4]}      '
-              f'5: {self.goals['home']}')
+        print(f"Wins: {self.matches['home']['win']}\t",
+        f"Draws: {self.matches['home']['draw']}\t",
+        f"Losses: {self.matches['home']['loss']}")
+        print(f"Goals:    Scored: {self.goals['home']}\t\t"
+              f"Conceded: {self.goalsAgainst['home']}")
+        print(f"Attempts: 1: {self.attempts['home'][1]}      "
+              f"2: {self.attempts['home'][2]}      "
+              f"3: {self.attempts['home'][3]}      "
+              f"4: {self.attempts['home'][4]}      "
+              f"5: {self.goals['home']}")
         print('\nAway Statistics:')
-        print(f'Wins: {self.matches['away']['win']}    ',
-              f'Draws: {self.matches['away']['draw']}   ',
-              f'Losses: {self.matches['away']['loss']}')
-        print(f'Goals:  Scored: {self.goals['away']}     ',
-              f'Conceded:  {self.goalsAgainst['away']}')
-        print(f'Attempts: 1: {self.attempts['away'][1]}      ',
-              f'2: {self.attempts['away'][2]}     ',
-              f'3: {self.attempts['away'][3]}     ',
-              f'4: {self.attempts['away'][4]}     ',
-              f'5: {self.goals['away']}')
+        print(f"Wins: {self.matches['away']['win']}    ",
+              f"Draws: {self.matches['away']['draw']}   ",
+              f"Losses: {self.matches['away']['loss']}")
+        print(f"Goals:  Scored: {self.goals['away']}     ",
+              f"Conceded:  {self.goalsAgainst['away']}")
+        print(f"Attempts: 1: {self.attempts['away'][1]}      ",
+              f"2: {self.attempts['away'][2]}     ",
+              f"3: {self.attempts['away'][3]}     ",
+              f"4: {self.attempts['away'][4]}     ",
+              f"5: {self.goals['away']}")
         print('\nMatches Played:')
         for item in self.results.items():
             print(item)
