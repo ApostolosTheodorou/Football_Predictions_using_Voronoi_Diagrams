@@ -262,7 +262,7 @@ def labelsSumDifferencePerGoalDifference(pathToMatchdaysDirectory,
             labelsDifefrences.append(labelsSumDifference)
             total[goalsDifference]+= labelsSumDifference
             count[goalsDifference]+= 1
-            print(f'{homeTeam}-{awayTeam}   {'    ' * goalsDifference}{labelsSumDifference}')
+            print(f'{homeTeam}-{awayTeam}   {"    " * goalsDifference}{labelsSumDifference}')
     for i in range (0,8):
         if count[i] != 0:
             print(f'Mean: {i}: {total[i]/count[i]}')
