@@ -36,4 +36,5 @@ where:
 * classifier possible values: Decision Tree, SVC, Random Forest, Nearest Neighbors, Naive Bayes, Neural Network, Multinomial Logistic Regression
 * arguments refering to matchdays can receive integer values from 1 to 26
 * the name of your model (.skops file extension is added by default)
+
 Example: -$python3 train_model.py -p ./matchdays -t oly -c Random Forest -str 1 -etr 13 -ste 14 -ete 26 -s RandomForest_Olympiacos_Train_1_13_Test_14_26
