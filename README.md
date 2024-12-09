@@ -13,11 +13,19 @@ To run an evaluation of the tested classifiers navigate to the "code/classifier_
 * If you want to run multiple folds create more folds directories with the structure of the existing fold and name them Fold-2, Fold-3 etc. Then change the number of folds in file evaluateClassifier.py line 16.
 
 
+
+
+
+
 To run a prediction for future or completed matches move the savedModels and matchdays directories in the code/prediction directory and run:
 
 -$python3 driver.py -ma <future>/<completed> -f <first matchday of predictions> -l <last matchday of predictions> -mo <model path> -s <absolute>/<probabilistic>/<cumulative>
 
 Example: $python3 driver.py -ma future -f 20 -l 26 -mo ./savedModels/RandomForest_Olympiacos_Train_1_13_Test_14_26.skops -s probabilistic
+
+
+
+
 
 To train a new model run the following code:
 
