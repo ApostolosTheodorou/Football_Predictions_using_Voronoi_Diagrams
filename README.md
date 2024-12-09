@@ -15,4 +15,17 @@ To run an evaluation of the tested classifiers navigate to the "code/classifier_
 
 To run a prediction for future or completed matches move the savedModels and matchdays directories in the code/prediction directory and run:
 
--$python3 driver.py
+-$python3 driver.py -ma <future>/<completed> -f <first matchday of predictions> -l <last matchday of predictions> -mo <model path> -s <absolute>/<probabilistic>/<cumulative>
+
+Example: $python3 driver.py -ma future -f 20 -l 26 -mo ./savedModels/RandomForest_Olympiacos_Train_1_13_Test_14_26.skops -s probabilistic
+
+To train a new model run the following code:
+
+-$python3 train_model.py -p <path to matchdays directory> -t <team> -c <classifier> -str <starting training set matchday> -etr <ending training set matchday> -ste <starting test set matchday> -ete <ending test set matchday> -s <model's name>
+
+where:
+* team is a three character string with possible values: All (for all teams to contribute to the building of the model), aek, ion, ari, ofi, oly, atr, pan, ast, pao, apo, the, gia, vol, lam
+* classifier possible values: Decision Tree, SVC, Random Forest, Nearest Neighbors, Naive Bayes, Neural Network, Multinomial Logistic Regression
+* arguments refering to matchdays can receive integer values from 1 to 26
+* the name of your model (.skops file extension is added by default)
+Example: -$python3 train_model.py -p ./matchdays -t oly -c Random Forest -str 1 -etr 13 -ste 14 -ete 26 -s RandomForest_Olympiacos_Train_1_13_Test_14_26
