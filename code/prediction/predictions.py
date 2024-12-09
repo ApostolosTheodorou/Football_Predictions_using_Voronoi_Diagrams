@@ -516,7 +516,7 @@ def predictNewOutcome(homeTeamAttempts, awayTeamAttempts, strategy):
             return winner, goalDiff
 
 
-def predictNewMatch(homeTeam, awayTeam):
+def predictNewMatch(homeTeam, awayTeam, strategy):
     '''
     Predicts the outcome of a match using a random distribution based on 
     the performance of the teams during the first half of the season
@@ -565,14 +565,14 @@ def predictNewMatch(homeTeam, awayTeam):
             homeTeamAttempts.append(category+1)
         for i in range (0, awayAttempts[category]):
             awayTeamAttempts.append(category+1)
-    # winner, goalDiff, score= predictNewOutcome(homeTeamAttempts, awayTeamAttempts, 'absolute')
-    # print(f'Winner: {winner}\nGoal Difference: {goalDiff}\nScore: {score}\n')
-    
-    
-    winner, probabilities= predictNewOutcome(homeTeamAttempts, awayTeamAttempts, 'probabilistic')
-    print(f'Winner: {winner}\nProbabilities: {probabilities}\n')
-
-    # winner, goalDiff= predictNewOutcome(homeTeamAttempts, awayTeamAttempts, 'cumulative')
-    # print(f'Winner: {winner}\nProbabilities: {goalDiff}\n')
+    if strategy == 'absolute':
+        winner, goalDiff, score= predictNewOutcome(homeTeamAttempts, awayTeamAttempts, 'absolute')
+        print(f'Winner: {winner}\nGoal Difference: {goalDiff}\nScore: {score}\n')
+    elif strategy == 'probabilistic':
+        winner, probabilities= predictNewOutcome(homeTeamAttempts, awayTeamAttempts, 'probabilistic')
+        print(f'Winner: {winner}\nProbabilities: {probabilities}\n')
+    elif strategy == 'cumulative':
+        winner, goalDiff= predictNewOutcome(homeTeamAttempts, awayTeamAttempts, 'cumulative')
+        print(f'Winner: {winner}\nProbabilities: {goalDiff}\n')
     return homeTeam.code+'-'+awayTeam.code+': '+winner
 
