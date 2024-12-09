@@ -19,7 +19,7 @@ To run an evaluation of the tested classifiers navigate to the "code/classifier_
 
 To run a prediction for future or completed matches move the savedModels and matchdays directories in the code/prediction directory and run:
 
--$python3 driver.py -ma <future>/<completed> -f <first matchday of predictions> -l <last matchday of predictions> -mo <model path> -s <absolute>/<probabilistic>/<cumulative>
+-$python3 driver.py -ma <future>/<completed> -f \<first matchday of predictions> -l \<last matchday of predictions> -mo \<model path> -s \<absolute>/\<probabilistic>/\<cumulative>
 
 Example: $python3 driver.py -ma future -f 20 -l 26 -mo ./savedModels/RandomForest_Olympiacos_Train_1_13_Test_14_26.skops -s probabilistic
 
