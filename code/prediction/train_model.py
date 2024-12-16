@@ -149,9 +149,9 @@ class Analytics:
                             attemptsPerCategory[category]+= 1
         totalAttempts= sum(attemptsPerCategory)
         
-        print(f'{team}   {totalAttempts}   {attemptsPerCategory['1']}'
-              f'{attemptsPerCategory['2']}   {attemptsPerCategory['3']}'   
-              f'{attemptsPerCategory['4']}   {attemptsPerCategory['5']}')
+        print(f'{team}   {totalAttempts}   {attemptsPerCategory["1"]}'
+              f'{attemptsPerCategory["2"]}   {attemptsPerCategory["3"]}'   
+              f'{attemptsPerCategory["4"]}   {attemptsPerCategory["5"]}')
 
 
 
